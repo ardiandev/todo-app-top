@@ -1,2 +1,115 @@
+$bg-header: rgb(188, 159, 139);
+$bg-body: #fff;
+$bg-sidebar: rgb(238, 233, 218);
+$bg-section: rgb(238, 233, 218);
+$bg-footer: rgb(238, 233, 218);
+
+$brown-dark: rgb(188, 159, 139);
+$green-dark: rgb(181, 207, 183);
+$green-light: rgb(202, 218, 191);
+$silver-light: rgb(231, 232, 216);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: $bg-body;
+}
+
+// Header
+header {
+  background-color: $bg-header;
+  padding: 10px 0;
+  text-align: center;
+  min-height: 50px;
+}
+
+// Main
+.container.main {
+  display: flex;
+  height: 100%;
+  // padding: 0 20px;
+}
+
+.sidebar {
+  background-color: $silver-light;
+  width: 350px;
+  height: 100%;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  border-bottom: 1px solid transparent;
+  background-color: $bg-header;
+  padding: 5px 10px;
+}
+
+.sidebar ul {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-container ul li {
+  cursor: pointer;
+  transition: all 4s ease-in-out;
+}
+
+.home-container ul li:hover {
+  color: $brown-dark;
+}
+
+.sidebar button {
+  padding: 3px 6px;
+  font-size: 1em;
+  background-color: $green-dark;
+}
+
+.todo-section {
+  background-color: $bg-section;
+  width: 100%;
+  padding: 10px;
+}
+
+.todo-heading-container,
+.todo-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.todo-heading-container {
+  background-color: $brown-dark;
+  color: black;
+}
+
+.todo-heading-container h2 {
+  font-size: 2em;
+}
+
+.todo-container {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: $brown-dark;
 }
