@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="#" />
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <h1 class="app-name">Todo App</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container main">
+        <nav class="sidebar">
+          <div class="home-container">
+            <h2>Home</h2>
+            <ul>
+              <li>All Tasks</li>
+              <li>Today</li>
+              <li>Next 7 Days</li>
+              <li>Important</li>
+            </ul>
+          </div>
+          <div class="projects-container">
+            <h2>Projects</h2>
+            <ul>
+              <li>Work</li>
+              <li>Home</li>
+              <li>
+                <button>Add project</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="todo-section">
+          <div class="todo-heading-container">
+            <h2 class="todo-heading">All Task</h2>
+            <ul class="todo-container"></ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer"></div>
+    </footer>
+  </body>
+</html>
